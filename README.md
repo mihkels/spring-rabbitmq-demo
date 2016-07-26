@@ -24,5 +24,5 @@ rabbitmq-server
 Now when build succseeded issue below command to start the sample application:
 
 ```bash
-java -jar target/rabbit-demo-0.0.1-SNAPSHOT.jar
+java -jar target/rabbitmq-demo-0.0.1-SNAPSHOT.jar
 ```
