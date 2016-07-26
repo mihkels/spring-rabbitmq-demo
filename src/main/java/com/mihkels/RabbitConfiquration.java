@@ -12,9 +12,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitConfiquration {
 
+    static final String QUEUE_NAME = "spring-boot.requests";
+
     @Bean
     public Queue requests() {
-        return new Queue("spring-boot.requests");
+        return new Queue(QUEUE_NAME);
     }
 
     @Bean
