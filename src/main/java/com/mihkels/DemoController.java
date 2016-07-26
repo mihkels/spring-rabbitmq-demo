@@ -33,7 +33,7 @@ public class DemoController {
 
     private DeferredResult<String> asyncProcessRequest(final String fullRequest) {
         final DeferredResult<String> result = new DeferredResult<>();
-        final ListenableFuture<String> converterFuture = rabbitTemplate.convertSendAndReceive("spring-boot", fullRequest);
+        final ListenableFuture<String> converterFuture = rabbitTemplate.convertSendAndReceive(RabbitConfiquration.QUEUE_NAME, fullRequest);
         converterFuture.addCallback(new HandleRabbitResponse(result));
 
         return result;

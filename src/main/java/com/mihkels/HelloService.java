@@ -12,7 +12,7 @@ import java.util.Date;
 public class HelloService {
     private static final Logger LOGGER = LoggerFactory.getLogger(HelloService.class);
 
-    @RabbitListener(queues = "spring-boot")
+    @RabbitListener(queues = RabbitConfiquration.QUEUE_NAME)
     public String process(@Payload String payload) {
         final String replay = new Date() + " " + "Hello " + payload;
         LOGGER.info("Processed message: {}", replay);

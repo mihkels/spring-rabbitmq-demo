@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.M2</version>
+		<version>1.4.0.RC1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -53,12 +53,12 @@
         <dependency>
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-amqp</artifactId>
-			<version>1.6.0.M2</version>
+			<version>1.6.1.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-rabbit</artifactId>
-			<version>1.6.0.M2</version>
+			<version>1.6.1.RELEASE</version>
 		</dependency>
 		
 		<dependency>
