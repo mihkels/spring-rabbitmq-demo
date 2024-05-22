@@ -34,7 +34,7 @@ public class RabbitConfiquration {
     @Bean
     public ConnectionFactory connectionFactory() throws Exception {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory("localhost");
-        connectionFactory.setPublisherConfirms(true);
+        connectionFactory.setPublisherConfirmType(CachingConnectionFactory.ConfirmType.CORRELATED);
         connectionFactory.setPublisherReturns(true);
 
         return connectionFactory;
