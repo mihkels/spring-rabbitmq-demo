@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RabbitConfiquration {
+public class RabbitConfiguration {
 
     static final String QUEUE_NAME = "spring-boot.requests";
 
@@ -32,7 +32,7 @@ public class RabbitConfiquration {
     }
 
     @Bean
-    public ConnectionFactory connectionFactory() throws Exception {
+    public ConnectionFactory connectionFactory() {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory("localhost");
         connectionFactory.setPublisherConfirmType(CachingConnectionFactory.ConfirmType.CORRELATED);
         connectionFactory.setPublisherReturns(true);
