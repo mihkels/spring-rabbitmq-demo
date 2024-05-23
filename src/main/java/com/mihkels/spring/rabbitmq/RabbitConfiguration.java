@@ -1,4 +1,4 @@
-package com.mihkels;
+package com.mihkels.spring.rabbitmq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.AsyncRabbitTemplate;
