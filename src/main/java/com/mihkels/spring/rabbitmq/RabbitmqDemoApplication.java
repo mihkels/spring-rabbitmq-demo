@@ -1,4 +1,4 @@
-package com.mihkels;
+package com.mihkels.spring.rabbitmq;
 
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;

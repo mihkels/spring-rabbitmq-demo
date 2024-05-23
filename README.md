@@ -36,7 +36,7 @@ curl -X POST localhost:8080 -d 'foo'
 and study the output of the application; you should see lines like
 
 ```
-2016-07-26 10:46:00.782  INFO 20907 --- [nio-8080-exec-1] com.mihkels.DemoController               : Request coming in: 1 foo=
-2016-07-26 10:46:00.810  INFO 20907 --- [cTaskExecutor-1] com.mihkels.HelloService                 : Processed message: Tue Jul 26 10:46:00 CEST 2016 Hello 1 foo=
-2016-07-26 10:46:00.814  INFO 20907 --- [enerContainer-1] com.mihkels.DemoController               : Output response: Tue Jul 26 10:46:00 CEST 2016 Hello 1 foo=
+2016-07-26 10:46:00.782  INFO 20907 --- [nio-8080-exec-1] com.mihkels.spring.rabbitmq.DemoController               : Request coming in: 1 foo=
+2016-07-26 10:46:00.810  INFO 20907 --- [cTaskExecutor-1] com.mihkels.spring.rabbitmq.HelloService                 : Processed message: Tue Jul 26 10:46:00 CEST 2016 Hello 1 foo=
+2016-07-26 10:46:00.814  INFO 20907 --- [enerContainer-1] com.mihkels.spring.rabbitmq.DemoController               : Output response: Tue Jul 26 10:46:00 CEST 2016 Hello 1 foo=
 ```
